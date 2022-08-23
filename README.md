@@ -8,14 +8,25 @@ First, data was oversampled using the RandomOverSampler and SMOTE algorithms, un
 ## Results:
  Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
-
+#### Sampling Models
+Naive Random Oversampling
 ![Naive random oversampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Naive_random_oversampling.png)
-![Cluster centroids undersampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/cluster_centroids_undersampling.png)
-![Smoteenn combination sampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/SMOTEENN_combination_sampling.png)
+
+SMOTE Oversampling
 ![Smote oversampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/SMOTE_oversampling.png)
 
+Cluster Centroids Undersampling
+![Cluster centroids undersampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/cluster_centroids_undersampling.png)
 
+SMOTEENN Combination Sampling
+![Smoteenn combination sampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/SMOTEENN_combination_sampling.png)
+
+
+#### Ensemble Learning Models
+Balanced Random Forest Classifier
 ![Balanced random forest classifier](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Balanced_random_forest_classifier.png)
+
+Easy Ensemble AdaBoost Classifier
 ![Easy emsemble adaboost classifier](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Easy_ensemble_AdaBoost_classifier.png)
 
 
