@@ -8,5 +8,20 @@ First, data was oversampled using the RandomOverSampler and SMOTE algorithms, un
 ## Results:
  Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
 
+
+![Naive random oversampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Naive_random_oversampling.png)
+![Cluster centroids undersampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/cluster_centroids_undersampling.png)
+![Smoteenn combination sampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/SMOTEENN_combination_sampling.png)
+![Smote oversampling](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/SMOTE_oversampling.png)
+
+
+![Balanced random forest classifier](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Balanced_random_forest_classifier.png)
+![Easy emsemble adaboost classifier](https://github.com/emariecovey/Credit_Risk_Analysis/blob/main/Challenge/Results_screenshots/Easy_ensemble_AdaBoost_classifier.png)
+
+
 ## Summary: 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+The f1 values (which accounts for both precision and recall) for the over, under, and combination sampled models were all extremely low (.02 and below) when predicting high-risk loans. These models were all very good at predicting low credit risk loans, which led them to having a high accuracy. However, they had very low precision for high-risk loans (0.01), which resulted in a low f1 score. Because of their low f1 values, none of these models should be used.
+
+The f1 values for the two ensemble learning models were higher (.47) when predicting high-risk loans, because they combine multiple models together to build a stronger model. Their precision was .73, so 73% of loans classified as "high risk" were actually high risk. However, their recall for high-risk loans is only .34, meaning that the models only detect 34% of high-risk applicants. Because of the low recall, this is not the best model, and I would suggest looking for another model. Considering that the dataset is so unbalanced (347 high-risk loans to 68,470 low-risk loans, or about 1 in 200), it's possible this is about as good of a model as this data could produce, and we may need to resort to using this model after testing a few other possibilities. 
+
